@@ -1,0 +1,243 @@
+.header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+
+  height: 80px;
+  width: 100%;
+
+  z-index: 100;
+
+  /* margin: 0 auto; */
+
+  position: sticky;
+  top: 0px;
+
+  background-color: white;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 10px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.homeLink {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__logo {
+  width: 120px;
+  height: 50px;
+
+  /* margin-left: 30px; */
+  display: flex;
+  align-items: center;
+
+  color: black;
+}
+
+.header__logo > span {
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 8px;
+}
+
+/***** center *****/
+
+.header__center {
+  flex: 0 1 auto;
+
+  position: relative;
+}
+
+.header__center__scroll {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 24px;
+  color: #222222;
+
+  display: inline-flex;
+  text-align: left;
+  vertical-align: middle;
+  /* box-shadow: ;
+  transition: box-shadow 0.2s ease; */
+}
+
+.header__center__scroll__btn {
+  border-radius: inherit;
+  width: 300px;
+  padding-left: 8px;
+
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+
+  display: flex;
+  outline: none;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: box-shadow 0.2s ease;
+}
+
+.header__center__scroll__btn:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.header__center__scroll__btn > span {
+  font-size: 14px;
+  color: rgb(34, 34, 34);
+  line-height: 18px;
+
+  font-weight: 600;
+  padding: 0 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.header__center__scroll__btn > div {
+  background-color: rgba(255, 56, 92);
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+
+  height: 32px;
+  width: 32px;
+  padding: 10px;
+  margin: 7px 7px 7px 0;
+}
+
+.header__center__scroll__search {
+  position: absolute;
+  top: 140%;
+  left: -80%;
+}
+
+/***** right *****/
+
+.header__right__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__right__nav__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__right__nav__left > a {
+  cursor: pointer;
+  text-decoration: none;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(34, 34, 34);
+  font-weight: 600;
+}
+
+.header__right__nav__left > button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: 0px;
+  margin: 0 10px;
+}
+
+.header__right__nav__right__btn {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #dddddd;
+  color: #222222;
+  cursor: pointer;
+  padding: 5px 5px 5px 12px;
+
+  height: 42px;
+  border-radius: 21px;
+
+  outline: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  transition: box-shadow 0.2s ease;
+}
+
+.header__right__nav__right__btn:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.icon,
+.icon__large {
+  color: rgb(113, 113, 113) !important;
+}
+
+.icon__large {
+  font-size: 36px !important;
+  margin-left: 8px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .header__wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 1128px) {
+  .header__wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .header__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 744px) {
+  .header__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 744px) {
+  .header__wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header__logo > span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header__logo > span {
+    display: none;
+  }
+
+  .header__right {
+    display: none;
+  }
+}

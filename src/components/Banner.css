@@ -1,0 +1,84 @@
+.banner {
+  height: 50vh;
+
+  height: 564px;
+  width: 100%;
+
+  position: relative;
+  /* background: url(https://a0.muscache.com/im/pictures/8b43a7f2-1808-436a-95c0-d4ed18b51097.jpg?im_q=highq&im_w=720);
+  background-size: cover; */
+}
+
+.banner__picture {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.picture > img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+.banner__content {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 180px 40px;
+}
+
+.banner__content__div {
+  width: 383px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__content__div > span {
+  color: white;
+  font-size: 108px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 92px;
+}
+
+.banner__content__link {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+
+  width: auto;
+  margin-top: 22px;
+}
+
+.explore {
+  color: #222222;
+  background-color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  padding: 7px 15px;
+  border-radius: 8px;
+
+  transition: all 0.2s ease;
+}
+
+.explore:hover {
+  border-color: #000000;
+  background: lightgrey;
+  color: #222222;
+}

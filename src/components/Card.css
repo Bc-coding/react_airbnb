@@ -1,0 +1,28 @@
+.card {
+  max-width: 33.3333%;
+  flex: 0 0 33.3333%;
+
+  margin-right: 10px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.card__imgWrapper {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card__img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.card__info > span {
+  font-size: 18px;
+  line-height: 22px;
+  max-height: 44px;
+  font-weight: 600;
+  overflow: hidden;
+  color: rgb(34, 34, 34);
+}
